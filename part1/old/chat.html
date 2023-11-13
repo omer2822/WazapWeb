@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <!-- meta tags for bootstrap -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+        <!-- Bootstrap Font Icon CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+        <!-- file CSS -->
+        <link href="chat.css" rel="stylesheet">
+
+        <title>ChatApp</title>
+    </head>
+
+    <body>
+
+        <div class="container-xxl">
+            <div class="row g-0 h-100">
+
+                <!-- left section, conversation list -->
+                <div class="col-md-4">
+
+                    <div class="settings-tray">
+                        <img class="profile-image" src="image1.png">
+                        <h6>Arik Bench</h6>
+                        <span class="settings-tray--right">
+                            <i class="bi-arrow-repeat"></i>
+                            <i class="bi-chat-left-text"></i>
+                            <i class="bi-person-plus" data-bs-toggle="modal" data-bs-target="#addContact"></i>
+                        </span>
+                    </div>
+
+                    <div class="search-box">
+                        <div class="input-wrapper">
+                            <i class="bi-search"></i>
+                            <input type="text" placeholder="search">
+
+                        </div>
+                    </div>
+
+                    <div class="friends-list">
+
+                        <div class="friend-drawer friend-drawer--onhover">
+                            <img class="profile-image" src="image2.jpg">
+                            <div class="text">
+                                <h6>The musician</h6>
+                                <p class="text-muted">ok, sounds great!</p>
+                            </div>
+                            <span class="time text-muted small">17:38</span>
+                        </div>
+
+                        <hr>
+
+                        <div class="friend-drawer friend-drawer--onhover">
+                            <img class="profile-image" src="image3.jpg">
+                            <div class="text">
+                                <h6>Meta moor</h6>
+                                <p class="text-muted">wanna grab a beer?</p>
+                            </div>
+                            <span class="time text-muted small">20:51</span>
+                        </div>
+
+                        <hr>
+
+                        <div class="friend-drawer friend-drawer--onhover">
+                            <img class="profile-image" src="image4.jpg">
+                            <div class="text">
+                                <h6>Stella Levi</h6>
+                                <p class="text-muted">Hey man!</p>
+                            </div>
+                            <span class="time text-muted small">13:43</span>
+                        </div>
+
+                        <hr>
+
+                        <div class="friend-drawer friend-drawer--onhover">
+                            <img class="profile-image" src="image5.jpg">
+                            <div class="text">
+                                <h6>Protector</h6>
+                                <p class="text-muted">Where are you?</p>
+                            </div>
+                            <span class="time text-muted small">00:00</span>
+                        </div>
+
+                        <hr>
+
+                        <div class="friend-drawer friend-drawer--onhover">
+                            <img class="profile-image" src="image6.jpg">
+                            <div class="text">
+                                <h6>Devon_34</h6>
+                                <p class="text-muted">is it still relevent?</p>
+                            </div>
+                            <span class="time text-muted small">11:06</span>
+                        </div>
+
+                        <hr>
+
+                        <div class="friend-drawer friend-drawer--onhover">
+                            <img class="profile-image" src="image7.jpg">
+                            <div class="text">
+                                <h6>Trainer Guy</h6>
+                                <p class="text-muted">Nice form!</p>
+                            </div>
+                            <span class="time text-muted small">06:32</span>
+                        </div>
+
+                        <hr>
+
+                        <div class="friend-drawer friend-drawer--onhover">
+                            <img class="profile-image" src="image8.jpg">
+                            <div class="text">
+                                <h6>Mina Jess</h6>
+                                <p class="text-muted">Hi, i'll be late</p>
+                            </div>
+                            <span class="time text-muted small">19:12</span>
+                        </div>
+
+                        <hr>
+
+                        <div class="friend-drawer friend-drawer--onhover">
+                            <img class="profile-image" src="image9.jpg">
+                            <div class="text">
+                                <h6>Big Boss</h6>
+                                <p class="text-muted">nice work</p>
+                            </div>
+                            <span class="time text-muted small">18:54</span>
+                        </div>
+
+                        <hr>
+
+                    </div>
+
+                </div>
+
+                <!-- right section, the chat -->
+                <div class="col-md-8">
+
+                    <div class="settings-tray">
+                        <img class="profile-image" src="image10.jpg">
+                        <h6>Little Bobby tables</h6>
+                        <span class="settings-tray--right">
+                            <i id="logout-btn" class="bi bi-x-lg"></i>
+                        </span>
+                    </div>
+
+                    <div class="messages-list">
+
+                        <div class="row g-0">
+                            <div class="col-md-3">
+                                <div class="chat-bubble">
+                                    Hello
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-0 offset-md-9">
+                            <div class="col-md-3">
+                                <div class="chat-bubble">
+                                    world!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-0">
+                            <div class="col-md-3">
+                                <div class="chat-bubble">
+                                    Hello
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-0 offset-md-9">
+                            <div class="col-md-3">
+                                <div class="chat-bubble">
+                                    world!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-0">
+                            <div class="col-md-3">
+                                <div class="chat-bubble">
+                                    Hello
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-0 offset-md-9">
+                            <div class="col-md-3">
+                                <div class="chat-bubble">
+                                    world!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-0">
+                            <div class="col-md-3">
+                                <div class="chat-bubble">
+                                    Hello
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-0 offset-md-9">
+                            <div class="col-md-3">
+                                <div class="chat-bubble">
+                                    world!
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-0">
+                            <div class="col-md-3">
+                                <div class="chat-bubble">
+                                    Hello
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-0 offset-md-9">
+                            <div class="col-md-3">
+                                <div class="chat-bubble">
+                                    world!
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="chat-box-tray">
+                        <div class="input-wrapper">
+                            <i class="bi-emoji-wink"></i>
+                            <input type="text" placeholder="Write your message!">
+                            <i class="bi-arrow-right-circle-fill"></i>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- addContact -->
+            <div class="modal fade" id="addContact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add new contact</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" placeholder="Contact's identifier">
+                    </div>
+                    <div class="modal-footer">
+                        <button id= "add-contact-btn" type="button" class="btn">Add</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+        </div>
+    </body>
+
+</html>

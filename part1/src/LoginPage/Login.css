@@ -1,0 +1,51 @@
+#LoginTable {
+    position: relative;
+    padding-top: 200px;
+    padding-left: 420px;
+    padding-right: 420px;
+    z-index: 3;
+}
+
+
+#text1 {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#text2 {
+    color: rgba(128, 128, 128, 0.818);
+}
+
+#text2-1 {
+    color: rgba(172, 255, 47, 0.708);
+}
+
+#text3 {
+    padding-right: 100px;
+}
+
+#text4 {
+    padding-right: 130px;
+}
+
+#SignInButton {
+    color: white;
+    background-color: black;
+    height: 50px;
+    width: 180px;
+}
+
+
+#loginContainer {
+    text-align: center;
+    margin: 50px auto;
+    background-color: white;
+    padding: 0px;
+    border-radius: 7px;
+    height: auto;
+    width: fit-content;
+}
+
+#loginForm {
+    padding: 20px 40px 40px 40px;
+}

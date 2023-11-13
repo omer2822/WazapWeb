@@ -1,0 +1,50 @@
+#LoginTable {
+position: relative;
+padding-top: 200px;
+padding-left: 420px;
+padding-right: 420px;
+z-index:3;
+}
+
+#text1{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#text2{
+    color: rgba(128, 128, 128, 0.818);
+}
+
+#text2-1{
+    color: rgba(172, 255, 47, 0.708);
+}
+
+#text3{
+padding-right: 100px;
+}
+
+#text4{
+ padding-right: 130px;
+}
+
+#SignInButton{
+    color: white;
+    background-color: black;
+    height: 50px;
+    width: 180px;
+}
+
+#background{
+position: absolute;
+background-color: white;
+margin-left:600px;
+margin-top:200px;
+width: 350px;
+height: 280px;
+z-index:2;
+}
+
+#landscape{
+    position: absolute;
+    z-index:1;
+}
